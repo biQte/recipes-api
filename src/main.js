@@ -11,4 +11,6 @@ AppDataSource.initialize().then(async () => {
         console.log('Server listening on port 4000');
     });
 
+}).catch((err) => {
+    console.error("Error during Data Source initialization", err)
 });

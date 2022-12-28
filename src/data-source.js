@@ -1,4 +1,5 @@
 import {DataSource} from 'typeorm';
+import {Ingredient} from './entity/ingredient.js';
 
 export const AppDataSource = new DataSource({
     type: 'postgres',
@@ -7,7 +8,7 @@ export const AppDataSource = new DataSource({
     username: 'Patryk',
     password: 'Szkola89!',
     database: 'recipes',
-    entities: [],
+    entities: [Ingredient],
     mutations: [],
     subscribers: [],
 });
